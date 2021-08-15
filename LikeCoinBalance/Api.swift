@@ -16,7 +16,7 @@ public class Api: ObservableObject {
     }
     
     func loadData(completion: @escaping (String) -> ()) {
-        guard let url = URL(string: "http://192.168.1.11:5000/wallet?address=" + walletAddress) else {
+        guard let url = URL(string: "Your REST API Host" + "/wallet?address=" + walletAddress) else {
             print("Invalid url...")
             return
         }
